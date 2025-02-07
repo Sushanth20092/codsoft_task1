@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>OnePlus 8</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <a href="#" class="nav__logo">OnePlus</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Description</a></li>
+                        <li class="nav__item"><a href="#l-section" class="nav__link">Specifications</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- HOME -->
+        <main class="l-main bd-grid">
+            <section class="home">
+                <div class="home__data">
+                    <h1 class="home__title">OnePlus 8</h1>
+                    <p class="home__description">The OnePlus 8 offers an immersive 90Hz Fluid Display, powerful Snapdragon 865 chipset, and an elegant design with a stunning AMOLED display. It's designed for users who want the best performance and the sleekest look in their smartphone.</p>
+                </div>
+                
+  <style>
+    
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+    }
+
+    
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+   
+    .fade {
+      animation-name: fade;
+      animation-duration: 3s;
+    }
+
+    @keyframes fade {
+      from { opacity: .4 }
+      to { opacity: 1 }
+    }
+  </style>
+
+
+  <!-- <h2>Simple Image Slideshow</h2> -->
+
+  <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img src="assets/img/neww1.png" alt="Image 1">
+    </div>
+
+    
+    <div class="mySlides fade">
+      <img src="assets/img/neww2.png" alt="Image 2">
+    </div>
+
+    
+    <div class="mySlides fade">
+      <img src="assets/img/neww3.png" alt="Image 3">
+    </div>
+  </div>
+
+ 
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+
+      
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+    
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      
+      
+      setTimeout(showSlides, 2000);
+    }
+  </script>
+
+            </section>
+
+            <!-- DETAILS ONEPLUS 8 -->
+            <section class="l-section" id="l-section">
+                <div class="details">
+                    <div class="details__content">
+                        <div class="details__box">
+                            <span class="details__initial"></span>
+                            <h3 class="details__title">Display</h3>
+                            <p class="details__description">6.55-inch AMOLED display with 90Hz refresh rate for ultra-smooth visuals.</p>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial"></span>
+                            <h3 class="details__title">Performance</h3>
+                            <p class="details__description">Powered by the Qualcomm Snapdragon 865 with 5G support for lightning-fast speeds.</p>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial"></span>
+                            <h3 class="details__title">Camera</h3>
+                            <p class="details__description">48MP triple-camera system for stunning photos and videos, even in low light.</p>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial"></span>
+                            <h3 class="details__title">Processor</h3>
+                            <p class="details__description">Qualcomm Snapdragon 865, 2840 MHz, Kryo 585, 64-bit.</p>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial"></span>
+                            <h3 class="details__title">Features</h3>
+                            <p class="details__description">Fingerprint (under display, optical), accelerometer, gyro, proximity, compass.</p>
+                        </div>
+                        <div class="details__box">
+                            <span class="details__initial"></span>
+                            <h3 class="details__title">Battery</h3>
+                            <p class="details__description">Type: Li-Po 4300 mAh, Charging: 30W wired, 50% in 22 min.</p>
+                        </div>
+                    </div>
+
+                    <div class="details__img">
+                        <img src="assets/img/oneplus.png" alt="OnePlus 8" class="airpods">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
